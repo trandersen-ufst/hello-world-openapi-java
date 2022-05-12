@@ -57,7 +57,8 @@
     </dependencies>
 
     <properties>
-        <our-package>please.replace.in.pom.xml</our-package>
+        <!-- this value needs to be calculated, as it is not propertyrized by archetype:create-from-project -->
+        <our-package>${project.groupId}.openapi</our-package>
         <server-package>${our-package}.generated_server</server-package>
 
         <openapi-generator-maven-plugin.version>6.0.0-beta</openapi-generator-maven-plugin.version>
